@@ -18,15 +18,23 @@ namespace Carlson_Alicia_DatabaseReview
         {
             //Initailizing an instance of the program to reduce static code use
             Program instance = new Program();
-
             //Initializing a new instance of MySqlConnection
             instance._con = new MySqlConnection();
-
             //calling the connect function to connect to the database
             instance.Connect();
 
-            Console.WriteLine("Conection Successful!");
-            Console.ReadKey();
+            //Ask the user to enter a city to see the lastest instance of wheather
+            Console.WriteLine("Enter the name of a city you would like to see the latest weather report for: ");
+            string userSelection = Validation.NotNullOrBlank(Console.ReadLine(), "Enter the name of a city you would like to see the latest weather report for: ");
+
+            //Call QueryDB and pass in SELECT statement save output to string
+            string output = instance.QueryDB($"SELECT temp, pressure, humidity FROM weather WHERE city = \"{userSelection}\" ORDER BY createdDate DESC LIMIT 1;");
+
+            //Display results to user
+            Console.WriteLine(output);
+
+            //Allow user the see results before console window closes
+            Validation.PauseBeforeContinuing("Press any key to continue");
 
         }
 
@@ -85,6 +93,31 @@ namespace Carlson_Alicia_DatabaseReview
             string conString = $"Server={ip};uid=dbsAdmin;pwd=password;database=SampleAPIData;port=8889";
             //assigning the conString to the connection string function
             _con.ConnectionString = conString;
+        }
+
+        string QueryDB(string query)
+        {
+            MySqlCommand cmd = new MySqlCommand(query, _con);
+            
+            MySqlDataReader rdr = cmd.ExecuteReader();
+
+            if (rdr.HasRows)
+            {
+                rdr.Read();
+                string temp = rdr["temp"].ToString();
+                string pressure = rdr["pressure"].ToString();
+                string humidity = rdr["humidity"].ToString();
+                rdr.Close();
+
+                return $"Temp: {temp}\n" +
+                     $"Pressure: {pressure}\n" +
+                     $"Humidity: {humidity}";
+
+            }
+            else
+            {
+                return "No Data Available for the selected city.";
+            }
         }
 
     }
