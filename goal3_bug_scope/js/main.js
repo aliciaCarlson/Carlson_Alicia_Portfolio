@@ -81,18 +81,18 @@ console.log('------ Debugging ----------');
      display.  You may want to see the error messages in Chrome and Firefox.
  ***********************/
 
- /*
+
 	//Example1
-	var name = james, course = 'PWA1, month = 3;
-	console.log ("name: ", name + " / course: ", coures + " / month: ", month)
+	// var name = 'james', course = 'PWA1', month = 3;
+	// console.log ("name: ", name + " / course: ", course + " / month: ", month)
 
 
     //Example2:
 	//string w/ escape charaters and mixed single/double quotes
-	var phrase = 'he's in ' + ' "PWA1' ";
-	console.log("phase 4: ", phr@se);
+	var phrase = 'he\'s in ' + ' "PWA1" ';
+	console.log("phase 4: ", phrase);
 
-
+/*
     //Example3:
 	//nested conditional statement
 	if (a === a){    //1st IF statement
