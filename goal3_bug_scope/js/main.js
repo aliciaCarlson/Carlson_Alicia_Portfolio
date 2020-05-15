@@ -190,7 +190,7 @@ console.log('------ Debugging ----------');
   		}
 */
     var return10 = function(){
-        return 1;
+        return 10;
     }
 
     var num = return10();
