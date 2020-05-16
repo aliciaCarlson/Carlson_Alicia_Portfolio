@@ -11,6 +11,7 @@ namespace Velasco_Alicia_MadLibs
              * SDI 1910 Section 01
              * Mad Libs Assignment
              * 10 / 5 / 19
+             * Refactored: 05 / 15 / 2020
              */
 
             // Ask the user for their name
