@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace AliciaCarlson_CE09
+namespace Velasco_Alicia_GroceryCalc
 {
     public class Validation
     {
