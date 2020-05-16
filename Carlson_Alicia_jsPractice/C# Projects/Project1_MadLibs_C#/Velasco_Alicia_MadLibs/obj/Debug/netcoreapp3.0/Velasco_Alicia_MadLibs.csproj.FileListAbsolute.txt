@@ -1,0 +1,23 @@
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.deps.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.runtimeconfig.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.pdb
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.AssemblyInfo.cs
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_MadLibs/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.pdb
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.deps.json
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.runtimeconfig.json
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.dll
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/bin/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.pdb
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.csproj.CoreCompileInputs.cache
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.AssemblyInfo.cs
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.dll
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.pdb
+/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project1_MadLibs_C#/Velasco_Alicia_MadLibs/obj/Debug/netcoreapp3.0/Velasco_Alicia_MadLibs.genruntimeconfig.cache
