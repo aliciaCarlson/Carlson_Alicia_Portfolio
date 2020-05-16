@@ -1,0 +1,11 @@
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/bin/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/bin/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.deps.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/bin/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.runtimeconfig.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/bin/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/bin/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/bin/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.pdb
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/obj/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/obj/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/obj/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.AssemblyInfo.cs
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/obj/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/obj/Debug/netcoreapp3.0/Velasco_Alicia_GroceryCalc.pdb
