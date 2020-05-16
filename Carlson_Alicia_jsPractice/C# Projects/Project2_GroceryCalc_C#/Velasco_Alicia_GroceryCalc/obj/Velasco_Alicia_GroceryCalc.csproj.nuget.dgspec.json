@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aliciajo/Desktop/School/SDI/SDI Assignments/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj": {}
+    "/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project2_GroceryCalc_C#/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj": {}
   },
   "projects": {
-    "/Users/aliciajo/Desktop/School/SDI/SDI Assignments/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj": {
+    "/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project2_GroceryCalc_C#/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aliciajo/Desktop/School/SDI/SDI Assignments/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj",
+        "projectUniqueName": "/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project2_GroceryCalc_C#/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj",
         "projectName": "Velasco_Alicia_GroceryCalc",
-        "projectPath": "/Users/aliciajo/Desktop/School/SDI/SDI Assignments/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj",
+        "projectPath": "/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project2_GroceryCalc_C#/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc.csproj",
         "packagesPath": "/Users/aliciajo/.nuget/packages/",
-        "outputPath": "/Users/aliciajo/Desktop/School/SDI/SDI Assignments/Velasco_Alicia_GroceryCalc/Velasco_Alicia_GroceryCalc/obj/",
+        "outputPath": "/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/Carlson_Alicia_jsPractice/C# Projects/Project2_GroceryCalc_C#/Velasco_Alicia_GroceryCalc/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/aliciajo/.config/NuGet/NuGet.Config"
