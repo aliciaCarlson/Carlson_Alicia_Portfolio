@@ -1,0 +1,11 @@
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/obj/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/obj/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/obj/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.AssemblyInfo.cs
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/bin/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/bin/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.deps.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/bin/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.runtimeconfig.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/bin/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/bin/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/bin/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.pdb
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/obj/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_ShirtSizes/Velasco_Alicia_ShirtSizes/obj/Debug/netcoreapp3.0/Velasco_Alicia_ShirtSizes.pdb
