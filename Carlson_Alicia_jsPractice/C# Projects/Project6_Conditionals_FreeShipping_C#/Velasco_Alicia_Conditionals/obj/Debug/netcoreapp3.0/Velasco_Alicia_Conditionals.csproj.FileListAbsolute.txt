@@ -1,0 +1,11 @@
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/bin/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/bin/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.deps.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/bin/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.runtimeconfig.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/bin/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/bin/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/bin/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.pdb
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/obj/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/obj/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/obj/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.AssemblyInfo.cs
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/obj/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Conditionals/Velasco_Alicia_Conditionals/obj/Debug/netcoreapp3.0/Velasco_Alicia_Conditionals.pdb

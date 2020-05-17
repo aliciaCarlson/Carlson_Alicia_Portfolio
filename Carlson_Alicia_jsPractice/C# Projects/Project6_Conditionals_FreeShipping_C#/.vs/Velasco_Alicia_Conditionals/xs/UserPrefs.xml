@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{9FFB84F1-2035-450F-93C0-74F2D4D03767}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Velasco_Alicia_Conditionals/Program.cs">
+    <Files>
+      <File FileName="Velasco_Alicia_Conditionals/Program.cs" Line="20" Column="38" />
+      <File FileName="Velasco_Alicia_Conditionals/Validation.cs" Line="8" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Velasco_Alicia_Conditionals" expanded="True">
+            <Node name="Velasco_Alicia_Conditionals" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Velasco__Alicia__Conditionals PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
