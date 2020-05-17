@@ -1,0 +1,11 @@
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/bin/Debug/netcoreapp3.0/Velasco_Alicia_Arrays
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/bin/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.deps.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/bin/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.runtimeconfig.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/bin/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/bin/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/bin/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.pdb
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/obj/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/obj/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/obj/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.AssemblyInfo.cs
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/obj/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.dll
+/Users/aliciajo/Desktop/SDI/Velasco_Alicia_Arrays/Velasco_Alicia_Arrays/obj/Debug/netcoreapp3.0/Velasco_Alicia_Arrays.pdb
