@@ -1,0 +1,11 @@
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/bin/Debug/netcoreapp3.0/ZombieLoopingMadness
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/bin/Debug/netcoreapp3.0/ZombieLoopingMadness.deps.json
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/bin/Debug/netcoreapp3.0/ZombieLoopingMadness.runtimeconfig.json
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/bin/Debug/netcoreapp3.0/ZombieLoopingMadness.runtimeconfig.dev.json
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/bin/Debug/netcoreapp3.0/ZombieLoopingMadness.dll
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/bin/Debug/netcoreapp3.0/ZombieLoopingMadness.pdb
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/obj/Debug/netcoreapp3.0/ZombieLoopingMadness.csprojAssemblyReference.cache
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/obj/Debug/netcoreapp3.0/ZombieLoopingMadness.AssemblyInfoInputs.cache
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/obj/Debug/netcoreapp3.0/ZombieLoopingMadness.AssemblyInfo.cs
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/obj/Debug/netcoreapp3.0/ZombieLoopingMadness.dll
+/Users/aliciajo/Desktop/SDI/ZombieLoopingMadness/ZombieLoopingMadness/obj/Debug/netcoreapp3.0/ZombieLoopingMadness.pdb
