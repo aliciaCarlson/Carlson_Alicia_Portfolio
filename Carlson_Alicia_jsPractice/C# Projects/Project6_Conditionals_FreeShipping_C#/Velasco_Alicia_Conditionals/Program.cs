@@ -9,22 +9,18 @@ namespace Velasco_Alicia_Conditionals
             /* Alicia Velasco
              * SDI 1910 Section 01
              * Assignment: Code Exercise: Conditionals
-             * 10 / 13 /19 
+             * 10 / 13 /19
+             * Refactored 05 / 17 /2020
              */
 
             //Problem #1 - Free Shipping
             //Tell the user what we are doing.
             Console.WriteLine("Please enter how many items you purchased to calculate your shipping cost.");
 
-            //Catch the user's response
-            string itemsBoughtString = Console.ReadLine();
-
-            //Converting the string to number datatype
-            decimal numItemsBought = decimal.Parse(itemsBoughtString);
+            decimal numItemsBought = Validation.GetDecimal(Console.ReadLine());
 
             //Create variable for shipping cost per item
             decimal perItemShipping = 1.25m;
-
 
             //Using if for user purchases with less than 5 items
             if (numItemsBought < 5)
