@@ -9,8 +9,9 @@ namespace FinalProject
 {
     class Troll : Creature
     {
-        public Troll()
+        public Troll(string name, int health) : base(name, health)
         {
+           
         }
     }
 }

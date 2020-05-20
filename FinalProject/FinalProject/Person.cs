@@ -9,8 +9,23 @@ namespace FinalProject
 {
     public class Person
     {
-        public Person()
+        public string Name { get; private set; }
+        public int GoldBalance { get; private set; }
+        public int Health { get; private set; }
+
+        public Person(string _name)
         {
+            Name = _name;
+            GoldBalance = 500;
+            Health = 500;
         }
+
+        public void DisplayStats()
+        {
+            Console.WriteLine($"Adventurer Name - {this.Name}\n" +
+                $"Health - {this.Health}\n" +
+                $"Gold - {this.GoldBalance}");
+        }
+
     }
 }

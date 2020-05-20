@@ -9,8 +9,13 @@ namespace FinalProject
 {
     abstract class Creature
     {
-        public Creature()
+        string name;
+        int health;
+
+        public Creature(string _name, int _health)
         {
+            name = _name;
+            health = _health;
         }
     }
 }

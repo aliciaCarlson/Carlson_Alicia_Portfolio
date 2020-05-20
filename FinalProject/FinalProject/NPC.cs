@@ -9,8 +9,11 @@ namespace FinalProject
 {
     public class NPC : Person, IPayable
     {
-        public NPC()
+        int goldBalance;
+
+        public NPC(string name) : base(name)
         {
+            goldBalance = 500;
         }
     }
 }

@@ -9,8 +9,9 @@ namespace FinalProject
 {
     class Giant : Creature
     {
-        public Giant()
+        public Giant(string name, int health) : base(name, health)
         {
+
         }
     }
 }
