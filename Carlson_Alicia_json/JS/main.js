@@ -73,16 +73,20 @@ console.log(myJSON.people[0].job);
 //1. Create a JSON object in the blank json_weather.js file using the provided weatherData.txt file.
 // Use the following line if code to test your new file: console.log(data.results.forecast[2].day);
 
-
+console.log(weather.results.forecast[2].day);
 
 // 2. Console.log the forecast for the next 3 days in sentence (String) format
 // example: Today is Saturday. The high is 82. The low is 65. It will be partly cloudy.
-
+for(let i = 0; i < weather.results.forecast.length; i++){
+    console.log(`Today is ${weather.results.forecast[i].day}. The high is ${weather.results.forecast[i].high}. The low is ${weather.results.forecast[i].low}. It will be ${weather.results.forecast[i].text}.`);
+}
 
 
 // 3. Console.log each of the employees showing their full names (from the object "employees"
 // and jobs (from the object "people").
-
+for(let i = 0; i < obj.employees.length; i++){
+    console.log(obj.employees[i].firstName + " " + obj.employees[i].lastName + " - Job: " + myJSON.people[i].job);
+}
 
 
 
