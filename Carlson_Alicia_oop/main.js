@@ -9,11 +9,16 @@ class Animal{
         return `You have fed ${this._name} the ${this._type} ${howMany} ${this.treat} treat(s)!`;
     }
 
+    makeNoise(){
+        return `${this._name} the ${this._type} made a noise`;
+    }
+
 }
 
 let millie = new Animal('monkey', 'millie', 'banana');
 console.log(millie);
 console.log(millie.feedTreat(1));
+console.log(millie.makeNoise());
 
 class Dog extends Animal{
     constructor(type, name, treat, size, weight) {
@@ -50,9 +55,14 @@ class Dog extends Animal{
         return this.feedTreat(numTreats);
     }
 
+    makeNoise() {
+        return `${this._name} the ${this._type} barked!`;
+    }
+
 }
 
 let mozzie = new Dog('Great Dane', 'Mozzie', 'milkbone', 'xlarge', 120);
 console.log(mozzie);
 console.log(mozzie.calculateNumOfTreats());
+console.log(mozzie.makeNoise());
 // Fun fact - Mozzie is my doggie (:
