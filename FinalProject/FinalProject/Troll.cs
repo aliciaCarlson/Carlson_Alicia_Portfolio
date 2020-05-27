@@ -7,11 +7,11 @@ using System.IO;
 
 namespace FinalProject
 {
-    class Troll : Creature
+    class Troll : Opponents
     {
-        public Troll(string name, int health) : base(name, health)
+        public Troll(string name) : base(name)
         {
-           
+            this.damage = 25;
         }
     }
 }

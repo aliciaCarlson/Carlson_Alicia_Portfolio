@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-
 namespace FinalProject
 {
-    abstract class Creature
+    abstract class Opponents
     {
-        string name;
-        int health;
+        public string name { get; private set; }
+        public int damage { get; set; }
 
-        public Creature(string _name, int _health)
+        public Opponents(string _name)
         {
             name = _name;
-            health = _health;
         }
 
         public int ThrowHand()
@@ -23,7 +16,7 @@ namespace FinalProject
             int handTrown = 0;
 
             Random random = new Random();
-            handTrown = random.Next(1, 3);
+            handTrown = random.Next(1, 4);
 
             switch (handTrown)
             {
@@ -51,6 +44,5 @@ namespace FinalProject
 
             return handTrown;
         }
-
     }
 }

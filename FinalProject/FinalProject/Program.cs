@@ -10,6 +10,12 @@ namespace FinalProject
     class Program
     {
         Person adventurer = null;
+        Opponents opponent = null;
+        Opponents highwayMen = new NPC("Highway Men");
+        Opponents bandits = new NPC("Bandits");
+        Opponents troll = new Troll("Troll");
+        Opponents giant = new Giant("Giant");
+        Opponents travelTax = new NPC("Gate Guard");
 
         static void Main(string[] args)
         {
@@ -50,13 +56,17 @@ namespace FinalProject
                     case 3:
                         {
                             Console.Clear();
+                            instance.DisplayGameSynopsis();
                             Validation.PauseBeforeContinuing("Press any key to return to the Main Menu...");
                         }
                         break;
                     case 4:
                         {
                             Console.Clear();
-                            // instance.DisplayLetterFromKing();
+                            instance.DisplayLetterFromKing();
+                            Validation.PauseBeforeContinuing("Press any key to continue...");
+                            Console.Clear();
+                            instance.Day1();
                             Validation.PauseBeforeContinuing("Press any key to return to the Main Menu...");
                         }
                         break;
@@ -79,10 +89,10 @@ namespace FinalProject
             
         }
 
-        // What to display when the game starts. Need to fix file path to work on all comps
+        // What to display when the game starts.
         void OpeningDisplay()
         {
-            using (StreamReader inStream = new StreamReader(@"/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/FinalProject/FinalProject/FileIOInput/openingDisplay.txt"))
+            using (StreamReader inStream = new StreamReader(@"../../../FileIOInput/openingDisplay.txt"))
             {
                 while (inStream.Peek() > -1)
                 {
@@ -95,10 +105,10 @@ namespace FinalProject
             Console.Clear();
         }
 
-        // Letter from the king. Need to fix file path to work on all comps
+        // Letter from the king.
         void DisplayLetterFromKing()
         {
-            using (StreamReader inStream = new StreamReader(@"/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/FinalProject/FinalProject/FileIOInput/scrollHeader.txt"))
+            using (StreamReader inStream = new StreamReader(@"../../../FileIOInput/scrollHeader.txt"))
             {
                 while (inStream.Peek() > -1)
                 {
@@ -125,7 +135,7 @@ namespace FinalProject
 
             
 
-            using (StreamReader inStream = new StreamReader(@"/Users/aliciajo/Desktop/Carlson_Alicia_Portfolio/FinalProject/FinalProject/FileIOInput/scrollFooter.txt"))
+            using (StreamReader inStream = new StreamReader(@"../../../FileIOInput/scrollFooter.txt"))
             {
                 while (inStream.Peek() > -1)
                 {
@@ -211,6 +221,280 @@ namespace FinalProject
                               "off for safe passage. For the more daring adventurer, battle these foes with a game\n" +
                               "of Rock, Paper, Scissors. Win and you will be free to pass but lose and your fee for\n" +
                               "safe passage will be doubled!");
+        }
+
+        void EncounterOpponent()
+        {
+            int winnerCode = 0;
+            int gamesPlayed = 0;
+            if (opponent is IPayable)
+            {
+                Console.Write("Would you like to\n" +
+                    "1 - Pay for safe passage\n" +
+                    "2 - Battle with Rock, Paper, Scissors\n" +
+                    "Enter your choice: ");
+                string answer = Validation.NotNullOrBlank(Console.ReadLine().ToLower(), "Enter your choice: ");
+
+                switch (answer)
+                {
+                    case "1":
+                    case "pay":
+                        {
+                            ((IPayable)opponent).PayForPassage(adventurer);
+                        }
+                        break;
+                    case "2":
+                    case "battle":
+                        {
+                            winnerCode = Battle();
+                            if(winnerCode != 1)
+                            {
+                                ((IPayable)opponent).DoubleForPassage(adventurer);
+                            }
+                        }
+                        break;
+                }
+            }
+            else
+            {
+                while(winnerCode != 1 && gamesPlayed < 3)
+                {
+                    winnerCode = Battle();
+                    gamesPlayed += 1;
+                }
+                if(gamesPlayed == 3)
+                {
+                    Console.WriteLine($"You have weakened the {opponent.name} enough to defeat it!");
+                }
+            }
+            
+        }
+
+        int Battle()
+        {
+            int winnerCode = 0;
+            int adventurerHand = adventurer.ThrowHand();
+            int opponentHand = opponent.ThrowHand();
+
+            switch (adventurerHand)
+            {
+                case 1:
+                    {
+                        switch (opponentHand)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine("It's a tie!");
+                                    winnerCode = 3;
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    Console.WriteLine($"{opponent.name} has won!");
+                                    winnerCode = 2;
+                                    adventurer.Health -= opponent.damage;
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    Console.WriteLine($"{adventurer.Name} has won!");
+                                    winnerCode = 1;
+                                    break;
+                                }
+                        }
+
+                        break;
+                    }
+                case 2:
+                    {
+                        switch (opponentHand)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine($"{adventurer.Name} has won!");
+                                    winnerCode = 1;
+                                    break;
+                                }
+                        case 2:
+                            {
+                                Console.WriteLine($"It's a tie!");
+                                winnerCode = 3;
+                                break;
+                                }
+                            case 3:
+                                {
+                                Console.WriteLine($"{opponent.name} has won!");
+                                winnerCode = 2;
+                                adventurer.Health -= opponent.damage;
+                                break;
+                                }
+                        }
+
+                        break;
+                    }
+                case 3:
+                    {
+                        switch (opponentHand)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine($"{opponent.name} has won!");
+                                    winnerCode = 2;
+                                    adventurer.Health -= opponent.damage;
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    Console.WriteLine($"{adventurer.Name} has won!");
+                                    winnerCode = 1;
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    Console.WriteLine($"It's a tie!");
+                                    winnerCode = 3;
+                                    break;
+                                }
+                        }
+
+                        break;
+                    }
+
+
+            }
+
+            Console.WriteLine();
+            return winnerCode;
+        }
+
+        void GameOver()
+        {
+            Console.Clear();
+            Console.WriteLine("You don't have enough health or gold to continue on your journey.\n" +
+                "Create a new adventurer and try again!");
+            adventurer = null;
+            Validation.PauseBeforeContinuing();
+        }
+
+        void Day1()
+        {
+            Console.WriteLine("D A Y  1\n" +
+                "You embark on your journey. The terrain is mild. You don't encounter\n" +
+                $"any foes. You end the day with {adventurer.Health} Health & {adventurer.GoldBalance} Gold");
+            Validation.PauseBeforeContinuing("Press any key to continue...\n");
+            Console.Clear();
+            Day2();
+        }
+
+        void Day2()
+        {
+            opponent = highwayMen;
+            Console.WriteLine($"D A Y  2\n" +
+                $"You awake at sunrise and set out. Mid-day you are met by {opponent.name}. You can choose to\n" +
+                $"pay or fight.\n");
+            EncounterOpponent();
+            if (adventurer.Health > 40 && adventurer.GoldBalance > 50)
+            {
+                Console.WriteLine($"\nAt dusk you make camp. You end the day with {adventurer.Health} Health & {adventurer.GoldBalance} Gold");
+                Validation.PauseBeforeContinuing("Press any key to continue...\n");
+                Console.Clear();
+                Day3();
+            }
+            else
+            {
+                GameOver();
+            }
+            
+           
+        }
+
+        void Day3()
+        {
+            opponent = troll;
+            Console.WriteLine($"D A Y  3\n" +
+                $"You awake to an unknown sound! There's a {opponent.name} in your camp! You must fight him off...\n");
+            EncounterOpponent();
+            if (adventurer.Health > 40 && adventurer.GoldBalance > 50)
+            {
+                Console.WriteLine($"\nYou continue on your journey without further encounters today. You end the day with {adventurer.Health} Health & {adventurer.GoldBalance} Gold");
+                Validation.PauseBeforeContinuing("Press any key to continue...\n");
+                Console.Clear();
+                Day4();
+            }
+            else
+            {
+                GameOver();
+            }
+        }
+
+        void Day4()
+        {
+            opponent = giant;
+            Console.WriteLine($"D A Y  4\n" +
+                $"You awake at dawn and set out. You take a mountain pass. You've saved yourself 2 days of traveling\n" +
+                $"but have to pass through a {opponent.name}'s camp. You must fight the {opponent.name}...\n");
+            EncounterOpponent();
+            if (adventurer.Health > 40 && adventurer.GoldBalance > 50)
+            {
+                Console.WriteLine($"\nYou continue on your journey and make camp in a mountain cave.\n" +
+                    $"You end the day with {adventurer.Health} Health & {adventurer.GoldBalance} Gold");
+                Validation.PauseBeforeContinuing("Press any key to continue...\n");
+                Console.Clear();
+                Day5();
+            }
+            else
+            {
+                GameOver();
+            }
+        }
+
+        void Day5()
+        {
+            opponent = bandits;
+            Console.WriteLine($"You awaken mid-morning and continue on your quest. By mid-afternoon you begin to see the outline of the castle\n" +
+                $"on the horizon. At dusk you are approached by {opponent.name}. You can pay or fight...\n");
+            EncounterOpponent();
+            if (adventurer.Health > 40 && adventurer.GoldBalance > 50)
+            {
+                Console.WriteLine($"\nYou continue a few miles and make camp. You will reach your destination tomorrow! You end the day\n" +
+                    $"with {adventurer.Health} Health & {adventurer.GoldBalance} Gold");
+                Validation.PauseBeforeContinuing("Press any key to continue...\n");
+                Console.Clear();
+                Day6();
+            }
+            else
+            {
+                GameOver();
+            }
+        }
+
+        void Day6()
+        {
+            opponent = travelTax;
+            Console.WriteLine($"You awaken before sunrise eager to arrive at the castle. You set off while it's still dark. The land around the\n" +
+                $"Town of Middle is well patroled by the town guards. Mid-day you arrive at the town gates.\n" +
+                $"There is a travelers tax and you must pay 50 gold to enter the city.");
+            ((IPayable)opponent).TravelersTax(adventurer);
+            Console.WriteLine($"\nYou enter the city with {adventurer.Health} Health & {adventurer.GoldBalance} Gold.");
+            Validation.PauseBeforeContinuing("Press any key to continue...\n");
+            Console.Clear();
+            FileIO();
+        }
+
+        void FileIO()
+        {
+            Console.WriteLine("You've arrived at the castle. You enter the King's Throne Room where he congratulates you.\n" +
+                $"You are knighted and presented with an offical decree. See {adventurer.Name}{DateTime.Now.ToString("yyyyMMddHHmmss")}.txt in the Decrees folder to view your decree!");
+
+            string path = $@"../../../Decrees/{adventurer.Name}{DateTime.Now.ToString("yyyyMMddHHmmss")}";
+            string stringToSave = $"Adventurer {adventurer.Name}\n" +
+                $"Ending Health: {adventurer.Health}\n" +
+                $"Ending Gold: {adventurer.GoldBalance}\n" +
+                $"This decree is to certify that Adventurer {adventurer.Name} is now Knight {adventurer.Name}\n" +
+                $"by offical order of King Modzog!";
+            File.WriteAllText(path, stringToSave);
+            adventurer = null;
+            Validation.PauseBeforeContinuing();
         }
     }
 }

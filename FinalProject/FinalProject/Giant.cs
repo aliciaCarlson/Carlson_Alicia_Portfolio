@@ -7,11 +7,11 @@ using System.IO;
 
 namespace FinalProject
 {
-    class Giant : Creature
+    class Giant : Opponents
     {
-        public Giant(string name, int health) : base(name, health)
+        public Giant(string name) : base(name)
         {
-
+            this.damage = 40;
         }
     }
 }

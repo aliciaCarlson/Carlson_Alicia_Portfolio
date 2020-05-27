@@ -9,5 +9,11 @@ namespace FinalProject
 {
     public interface IPayable
     {
+
+        void PayForPassage(Person adventurer);
+
+        void DoubleForPassage(Person adventurer);
+
+        void TravelersTax(Person adventurer);
     }
 }
