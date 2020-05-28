@@ -1,3 +1,4 @@
+// Person class. adventurer uses this class. Has a method for displaying stats and to throw a hand
 class Person{
 constructor(name) {
     this.name = name;
@@ -14,7 +15,7 @@ ThrowHand(){
     let needAValidAnswer = true;
     let handValue = 0;
     while(needAValidAnswer){
-        let handThrown = prompt('What would you like to throw?\n1 - Rock\n2 - Paper\n3 - Scissors\nEnter thr number or name of the hand you would like to throw: ');
+        let handThrown = prompt('What would you like to throw?\n1 - Rock\n2 - Paper\n3 - Scissors\nEnter the number or name of the hand you would like to throw: ');
         switch(handThrown){
             case '1':
             case 'rock':{
@@ -49,6 +50,7 @@ ThrowHand(){
 }
 }
 
+// Opponent class. Parent class for NPC, Troll & Giant. Has a method for throwing a RPS hand
 class Opponents{
     constructor(name) {
         this.name = name;
@@ -74,6 +76,7 @@ class Opponents{
     }
 }
 
+// NPC class. highwayMen and bandits use this class. Unique damage amount. Has method for being able to pay for safe passage
 class NPC extends Opponents{
     constructor(name) {
         super(name);
@@ -124,6 +127,7 @@ class NPC extends Opponents{
     }
 }
 
+// Troll class. troll uses this class. Unique damage amount.
 class Troll extends Opponents{
     constructor(name) {
         super(name);
@@ -131,6 +135,7 @@ class Troll extends Opponents{
     }
 }
 
+// Giant class. giant uses this class. Unique damage amount.
 class Giant extends Opponents{
     constructor(name) {
         super(name);
@@ -139,6 +144,29 @@ class Giant extends Opponents{
 
 }
 
+// LocalStorage class. Sets up methods for getting and adding winners to local storage
+class LocalStorage{
+
+    static getWinners(){
+        let winners;
+        if(localStorage.getItem('winners') === null){
+            winners = [];
+        }else{
+            winners = JSON.parse(localStorage.getItem('winners'));
+        }
+        return winners;
+    }
+
+    static addWinner(winner){
+        const winners = LocalStorage.getWinners();
+
+        winners.push(winner);
+
+        localStorage.setItem('winners', JSON.stringify(winners));
+    }
+}
+
+// Instantiating object variables to use in program
 let adventurer = null;
 let opponent = null;
 let highwayMen = new NPC("Highway Men");
@@ -147,7 +175,7 @@ let troll = new Troll("Troll");
 let giant = new Giant("Giant");
 let travelTax = new NPC("Gate Guard");
 
-
+// bool and while loop to keep showing menu until user exits. Switch statement to execute correct code depending on user choice
 let programRunning = true;
 while(programRunning){
     let menu = prompt("M A I N  M E N U\n1 - Create Adventurer\n2 - View Adventurer\n3 - Game Synopsis\n4 - Begin Game\n0 - Exit");
@@ -183,6 +211,7 @@ while(programRunning){
     }
 }
 
+// function to create adventurer. Checks for if an adventurer has been created. If adventurer exists, will prompt user if sure what to replace
 function createAdventurer(adventurer){
     if(adventurer !== null){
         console.log(`You have already created an adventurer.\nCreating a new adventurer will replace ${adventurer.name}`);
@@ -226,6 +255,7 @@ function createAdventurer(adventurer){
     return adventurer;
 }
 
+// function to display the adventurer. checks for if an adventurer has been created
 function displayAdventurer(adventurer){
     if(adventurer !== null){
         adventurer.DisplayStats();
@@ -235,10 +265,11 @@ function displayAdventurer(adventurer){
     }
 }
 
+// function for when an opponent is encountered. if payable, given the option to pay.
 function encounterOpponent(opponent){
     let winnerCode = 0;
     let gamesPlayed = 0;
-    if(opponent === NPC){
+    if(opponent === highwayMen || opponent === bandits){
         let answer = prompt("Would you like to\n1 - Pay for safe passage\n2 - Battle with Rock | Paper | Scissors\nEnter your choice:");
         switch(answer){
             case '1':
@@ -266,6 +297,7 @@ function encounterOpponent(opponent){
     }
 }
 
+// function to calculate the winner based upon adventurer hand played and opponent hand throw
 function battle(opponent){
     let winnerCode = 0;
     let adventurerHand = adventurer.ThrowHand();
@@ -340,15 +372,28 @@ function battle(opponent){
     return winnerCode;
 }
 
+// function to display if adventurer don't have enough health or gold to continue
 function gameOver(){
     console.log("You don't have enough health or gold to continue on your journey.\nCreate a new adventurer and try again!");
     adventurer = null;
 }
 
+// functions for each day. Displays story. calls encounterOpponent. Checks if user has enough health and gold to continue to next day. calls next day or gameOver accordingly
 function day1(adventurer){
+    alert(`Adventurer ${adventurer.name},\n` +
+    `   My daughter, Princess Katia, has told me of your great feats. Your many ` +
+        `victories over the fearsome creatures of our land. I'm calling on you now. ` +
+        `Journey from The Wooded Valley to my palace in The Town of Middle to accept my offer ` +
+        `of knighthood and the many rewards that come along with it.\n` +
+        `Be warned! You will face many creatures and unsavory persons on your journey. ` +
+        `Make it past all of your adversaries and arrive at the castle to claim your rightful title of knight.\n` +
+        `       Good Luck\n` +
+        `           King Modzog`)
     console.log(`D A Y  1\n` +
     `You embark on your journey. The terrain is mild. You don't encounter\n` +
-    `any foes. You end the day with ${adventurer.health} Health & ${adventurer.goldBalance} Gold.`)
+    `any foes. You end the day with ${adventurer.health} Health & ${adventurer.goldBalance} Gold.`);
+    alert("Read the story in the console.\nPress ok when you are ready to continue to the next day.");
+
     day2(adventurer);
 }
 
@@ -360,6 +405,7 @@ function day2(adventurer){
     encounterOpponent(opponent);
     if(adventurer.health > 40 && adventurer.goldBalance > 50){
         console.log(`At dusk you make camp. You end the day with ${adventurer.health} Health & ${adventurer.goldBalance} Gold.`);
+        alert("Read the story in the console.\nPress ok when you are ready to continue to the next day.");
         day3(adventurer);
     }
     else{
@@ -374,6 +420,8 @@ function day3(adventurer){
     encounterOpponent(opponent);
     if(adventurer.health > 40 && adventurer.goldBalance > 50){
         console.log(`You continue on your journey without further encounters today. You end the day with ${adventurer.health} Health & ${adventurer.goldBalance} Gold.`);
+        alert("Read the story in the console.\nPress ok when you are ready to continue to the next day.");
+
         day4(adventurer);
     }
     else{
@@ -390,6 +438,7 @@ function day4(adventurer){
     if(adventurer.health > 40 && adventurer.goldBalance > 50){
         console.log(`You continue on your journey and make camp in a mountain cave.\n` +
             `You end the day with ${adventurer.health} Health & ${adventurer.goldBalance} Gold.`);
+        alert("Read the story in the console.\nPress ok when you are ready to continue to the next day.");
         day5(adventurer);
     }
     else{
@@ -406,6 +455,7 @@ function day5(adventurer){
     if(adventurer.health > 40 && adventurer.goldBalance > 50){
         console.log(`\nYou continue a few miles and make camp. You will reach your destination tomorrow!\n` +
             `You end the day with ${adventurer.health} Health & ${adventurer.goldBalance} Gold.`);
+        alert("Read the story in the console.\nPress ok when you are ready to continue to the next day.");
         day6(adventurer);
     }
     else{
@@ -416,8 +466,20 @@ function day5(adventurer){
 function day6(adventurer){
     opponent = travelTax;
     console.log("You awaken before sunrise eager to arrive at the castle. You set off while it's still dark. The land around the\n" +
-    "Town of Middle is well patroled by the town guards. Mid-day you arrive at the town gates.\n" +
+    "Town of Middle is well patrolled by the town guards. Mid-day you arrive at the town gates.\n" +
     "There is a travelers tax and you must pay 50 gold to enter the city.");
     opponent.TravelersTax(adventurer);
     console.log(`You enter the city with ${adventurer.health} Health & ${adventurer.goldBalance} Gold`);
+
+    console.log(`You've arrived at the castle. You enter the King's Throne Room where he congratulates you.\n` +
+    `You are knighted and presented with an official decree!`)
+    alert(`Adventurer - ${adventurer.name}\n` +
+    `Ending Health - ${adventurer.health}\n` +
+    `Ending Gold - ${adventurer.goldBalance}\n` +
+    `This decree is to certify that Adventurer ${adventurer.name} is now Knight ${adventurer.name} by official order of King Modzog!\n\n` +
+    `You can go back and view you ending stats in local storage!`);
+
+    // Adds winner to localStorage
+    LocalStorage.addWinner(adventurer);
 }
+
