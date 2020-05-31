@@ -9,8 +9,10 @@ namespace FinalProject
 {
     class NPC : Opponents, IPayable
     {
+        // Class members
         int goldBalance;
 
+        // Constructors (damage inherited from Opponent Class)
         public NPC(string name) : base(name)
         {
             goldBalance = 0;
@@ -19,6 +21,7 @@ namespace FinalProject
 
         public void DoubleForPassage(Person adventurer)
         {
+            // Let user know they now have to pay double
             Console.WriteLine($"You should have taken the offer for safe passage when it was offered!\n" +
                 $"{this.name} now has no interest in fighting and is demanding double the gold to safely pass this area!");
             if (adventurer.GoldBalance > 100)
